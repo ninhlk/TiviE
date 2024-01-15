@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var yourAcc: UITextField!
 
-    @IBOutlet weak var signinButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
