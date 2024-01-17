@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0EA6A12B579E43006A5D52 /* MoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EA6A02B579E43006A5D52 /* MoviesController.swift */; };
+		1F0EA6A32B57B670006A5D52 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EA6A22B57B670006A5D52 /* MovieCollectionViewCell.swift */; };
 		1FBCD5462B561B25007969B3 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */; };
 		1FBCD5482B5656C5007969B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD5472B5656C5007969B3 /* Model.swift */; };
 		1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C12F2B47D12E00484086 /* AppDelegate.swift */; };
 		1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1312B47D12E00484086 /* SceneDelegate.swift */; };
-		1FF0C1342B47D12E00484086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1332B47D12E00484086 /* ViewController.swift */; };
+		1FF0C1342B47D12E00484086 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1332B47D12E00484086 /* ViewControllerLogin.swift */; };
 		1FF0C1372B47D12E00484086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C1352B47D12E00484086 /* Main.storyboard */; };
 		1FF0C1392B47D12F00484086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C1382B47D12F00484086 /* Assets.xcassets */; };
 		1FF0C13C2B47D12F00484086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C13A2B47D12F00484086 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0EA6A02B579E43006A5D52 /* MoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesController.swift; sourceTree = "<group>"; };
+		1F0EA6A22B57B670006A5D52 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 		1FBCD5472B5656C5007969B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1FF0C12C2B47D12E00484086 /* TiviE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiviE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF0C12F2B47D12E00484086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF0C1312B47D12E00484086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FF0C1332B47D12E00484086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FF0C1332B47D12E00484086 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
 		1FF0C1362B47D12E00484086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FF0C1382B47D12F00484086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF0C13B2B47D12F00484086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0EA69E2B577D96006A5D52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0C1332B47D12E00484086 /* ViewControllerLogin.swift */,
+				1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1F0EA69F2B577DCD006A5D52 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0C1352B47D12E00484086 /* Main.storyboard */,
+				1FF0C13A2B47D12F00484086 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1F0EA6A42B57B695006A5D52 /* Movie tab */ = {
+			isa = PBXGroup;
+			children = (
+				1F0EA6A02B579E43006A5D52 /* MoviesController.swift */,
+				1F0EA6A22B57B670006A5D52 /* MovieCollectionViewCell.swift */,
+			);
+			path = "Movie tab";
+			sourceTree = "<group>";
+		};
 		1FF0C1232B47D12E00484086 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +94,10 @@
 				1FBCD5472B5656C5007969B3 /* Model.swift */,
 				1FF0C12F2B47D12E00484086 /* AppDelegate.swift */,
 				1FF0C1312B47D12E00484086 /* SceneDelegate.swift */,
-				1FF0C1332B47D12E00484086 /* ViewController.swift */,
-				1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */,
-				1FF0C1352B47D12E00484086 /* Main.storyboard */,
+				1F0EA69E2B577D96006A5D52 /* Controller */,
+				1F0EA6A42B57B695006A5D52 /* Movie tab */,
 				1FF0C1382B47D12F00484086 /* Assets.xcassets */,
-				1FF0C13A2B47D12F00484086 /* LaunchScreen.storyboard */,
+				1F0EA69F2B577DCD006A5D52 /* Storyboard */,
 				1FF0C13D2B47D12F00484086 /* Info.plist */,
 			);
 			path = TiviE;
@@ -145,8 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBCD5482B5656C5007969B3 /* Model.swift in Sources */,
-				1FF0C1342B47D12E00484086 /* ViewController.swift in Sources */,
+				1FF0C1342B47D12E00484086 /* ViewControllerLogin.swift in Sources */,
+				1F0EA6A12B579E43006A5D52 /* MoviesController.swift in Sources */,
 				1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */,
+				1F0EA6A32B57B670006A5D52 /* MovieCollectionViewCell.swift in Sources */,
 				1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */,
 				1FBCD5462B561B25007969B3 /* ViewControllerHome.swift in Sources */,
 			);

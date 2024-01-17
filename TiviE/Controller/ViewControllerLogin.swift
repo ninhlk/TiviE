@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let actionOK = UIAlertAction(title: "OK", style: .default)
         
         if userName == "ninhlk" {
-            let homeScreen = storyboard?.instantiateViewController(withIdentifier: "HomeScreen") as! ViewControllerHome
+            let homeScreen = storyboard?.instantiateViewController(withIdentifier: "Tab bar controller") as! UITabBarController
             present(homeScreen, animated: true, completion: nil)
 
         } else {

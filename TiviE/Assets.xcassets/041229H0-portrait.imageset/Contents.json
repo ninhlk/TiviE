@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "movies-blue.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "041229H0-portrait.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
