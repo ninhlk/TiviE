@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FBCD5462B561B25007969B3 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */; };
+		1FBCD5482B5656C5007969B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD5472B5656C5007969B3 /* Model.swift */; };
 		1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C12F2B47D12E00484086 /* AppDelegate.swift */; };
 		1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1312B47D12E00484086 /* SceneDelegate.swift */; };
 		1FF0C1342B47D12E00484086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1332B47D12E00484086 /* ViewController.swift */; };
 		1FF0C1372B47D12E00484086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C1352B47D12E00484086 /* Main.storyboard */; };
 		1FF0C1392B47D12F00484086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C1382B47D12F00484086 /* Assets.xcassets */; };
 		1FF0C13C2B47D12F00484086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C13A2B47D12F00484086 /* LaunchScreen.storyboard */; };
-		1FFC909F2B4F951F0008DF6E /* ViewController_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC909E2B4F951F0008DF6E /* ViewController_Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		1FBCD5472B5656C5007969B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1FF0C12C2B47D12E00484086 /* TiviE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiviE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF0C12F2B47D12E00484086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF0C1312B47D12E00484086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +28,6 @@
 		1FF0C1382B47D12F00484086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF0C13B2B47D12F00484086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FF0C13D2B47D12F00484086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FFC909E2B4F951F0008DF6E /* ViewController_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,11 @@
 		1FF0C12E2B47D12E00484086 /* TiviE */ = {
 			isa = PBXGroup;
 			children = (
+				1FBCD5472B5656C5007969B3 /* Model.swift */,
 				1FF0C12F2B47D12E00484086 /* AppDelegate.swift */,
 				1FF0C1312B47D12E00484086 /* SceneDelegate.swift */,
 				1FF0C1332B47D12E00484086 /* ViewController.swift */,
-				1FFC909E2B4F951F0008DF6E /* ViewController_Home.swift */,
+				1FBCD5452B561B25007969B3 /* ViewControllerHome.swift */,
 				1FF0C1352B47D12E00484086 /* Main.storyboard */,
 				1FF0C1382B47D12F00484086 /* Assets.xcassets */,
 				1FF0C13A2B47D12F00484086 /* LaunchScreen.storyboard */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBCD5482B5656C5007969B3 /* Model.swift in Sources */,
 				1FF0C1342B47D12E00484086 /* ViewController.swift in Sources */,
-				1FFC909F2B4F951F0008DF6E /* ViewController_Home.swift in Sources */,
 				1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */,
 				1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */,
+				1FBCD5462B561B25007969B3 /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
