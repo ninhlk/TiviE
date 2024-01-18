@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var yourAcc: UITextField!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,15 +19,16 @@ class ViewController: UIViewController {
     // khi click nút login
     @IBAction func siginButtonClicked(_ sender: Any) {
         
-        let userName = yourAcc.text ?? ""
-        let emailAlert = UIAlertController(title: "Thông báo", message: "Vui lòng kiểm tra lại thông tin tài khoản hoặc mật khẩu", preferredStyle: .alert)
-        let actionOK = UIAlertAction(title: "OK", style: .default)
-        
+        userName = yourAcc.text ?? ""
+
         if userName == "ninhlk" {
             let homeScreen = storyboard?.instantiateViewController(withIdentifier: "Tab bar controller") as! UITabBarController
-            present(homeScreen, animated: true, completion: nil)
-
-        } else {
+            self.present(homeScreen, animated: true, completion: nil)
+        }
+        else 
+        {
+            let emailAlert = UIAlertController(title: "Thông báo", message: "Vui lòng kiểm tra lại thông tin tài khoản hoặc mật khẩu", preferredStyle: .alert)
+            let actionOK = UIAlertAction(title: "OK", style: .default)
             emailAlert.addAction(actionOK)
             self.present(emailAlert, animated: true)
         }
