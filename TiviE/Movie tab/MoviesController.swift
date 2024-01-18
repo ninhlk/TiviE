@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoviesController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class MoviesController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
     override func viewDidLoad() {
@@ -15,28 +15,18 @@ class MoviesController: UIViewController, UICollectionViewDataSource, UICollecti
 
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayMovies.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return genre.count
     }
-
-
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Collection Movie Cell", for: indexPath) as! CollectionViewCell
-
-        if let url = URL(string: arrayMovies[indexPath.row].imageP) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-          // Error handling...
-          guard let imageData = data else { return }
-          DispatchQueue.main.async {
-              cell.imageCollectionCell.image = UIImage(data: imageData)
-          }
-        }.resume()
-      }
-        cell.labelCollectionCell.text = arrayMovies[indexPath.row].name
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Table View Cell Movie", for: indexPath) as! TableViewCell
+        cell.buttonGenre.setTitle(genre[indexPath.row], for: .normal)
         return cell
     }
+    
+    
+    
+    
     
 }
