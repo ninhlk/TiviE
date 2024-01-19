@@ -54,7 +54,22 @@ var arrayMovies: [Movies] = [
     Movies(name: "Ngôi Sao Mới Rạng",
            imageP: "https://images.msky.vn/images/hbo/films/022895L2-portrait.jpg",
            imageL: "https://images.msky.vn/images/hbo/films/022895L2-landscape.jpg",
-           genre: "Kinh Dị",
-           urlStr: "https://www.youtube.com/watch?v=YLzxmoeuKzE")
+           genre: "Tình Cảm",
+           urlStr: "https://www.youtube.com/watch?v=YLzxmoeuKzE"),
+    Movies(name: "Người Máy Biến Hình: Quái Thú Trỗi Dậy",
+           imageP: "https://images.msky.vn/images/hbo/films/041163H1-portrait.jpg",
+           imageL: "https://images.msky.vn/images/hbo/films/041163H1-landscape.jpg",
+           genre: "Hành Động",
+           urlStr: "https://www.youtube.com/watch?v=MKEsYJ1k6mQ"),
+    Movies(name: "Chú Gấu Ted - Phần 2",
+           imageP: "https://images.msky.vn/images/hbo/films/019460L1-portrait.jpg",
+           imageL: "https://images.msky.vn/images/hbo/films/019460L1-landscape.jpg",
+           genre: "Gia Đình",
+           urlStr: "https://www.youtube.com/watch?v=_WIUoTymvTQ"),
+    Movies(name: "Thông Minh Lên",
+           imageP: "https://images.msky.vn/images/hbo/films/009427HS-portrait.jpg",
+           imageL: "https://images.msky.vn/images/hbo/films/009427HS-landscape.jpg",
+           genre: "Gia Đình",
+           urlStr: "https://www.youtube.com/watch?v=QkM_0uAMgRI")
     
 ]
