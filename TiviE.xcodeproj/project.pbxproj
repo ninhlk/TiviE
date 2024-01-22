@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1F0EA6A12B579E43006A5D52 /* MoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EA6A02B579E43006A5D52 /* MoviesController.swift */; };
-		1F0EA6A32B57B670006A5D52 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EA6A22B57B670006A5D52 /* CollectionViewCell.swift */; };
-		1F4434742B58D20C00B83FA4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4434732B58D20C00B83FA4 /* TableViewCell.swift */; };
+		1F4BF99E2B5A0C2E0064382A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BF99C2B5A0C2E0064382A /* HomeTableViewCell.swift */; };
+		1F4BF99F2B5A0C2E0064382A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4BF99D2B5A0C2E0064382A /* HomeTableViewCell.xib */; };
+		1F4BF9A22B5A0C560064382A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BF9A02B5A0C560064382A /* HomeCollectionViewCell.swift */; };
+		1F4BF9A32B5A0C560064382A /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4BF9A12B5A0C560064382A /* HomeCollectionViewCell.xib */; };
+		1F4BF9A62B5A0D960064382A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BF9A52B5A0D960064382A /* HomeController.swift */; };
+		1F4BF9AA2B5A52740064382A /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BF9A92B5A52740064382A /* PlayerController.swift */; };
 		1FBCD5482B5656C5007969B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD5472B5656C5007969B3 /* Model.swift */; };
 		1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C12F2B47D12E00484086 /* AppDelegate.swift */; };
 		1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1312B47D12E00484086 /* SceneDelegate.swift */; };
@@ -17,12 +21,20 @@
 		1FF0C1372B47D12E00484086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C1352B47D12E00484086 /* Main.storyboard */; };
 		1FF0C1392B47D12F00484086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C1382B47D12F00484086 /* Assets.xcassets */; };
 		1FF0C13C2B47D12F00484086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0C13A2B47D12F00484086 /* LaunchScreen.storyboard */; };
+		C97E33C4ED1119A094B58F20 /* Pods_TiviE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188466A729E008104CD90406 /* Pods_TiviE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A3BA6E9E5FD6ADD459BA52 /* Pods-TiviE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiviE.release.xcconfig"; path = "Target Support Files/Pods-TiviE/Pods-TiviE.release.xcconfig"; sourceTree = "<group>"; };
+		142110A723AF5479DD92C2B9 /* Pods-TiviE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiviE.debug.xcconfig"; path = "Target Support Files/Pods-TiviE/Pods-TiviE.debug.xcconfig"; sourceTree = "<group>"; };
+		188466A729E008104CD90406 /* Pods_TiviE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiviE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0EA6A02B579E43006A5D52 /* MoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesController.swift; sourceTree = "<group>"; };
-		1F0EA6A22B57B670006A5D52 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		1F4434732B58D20C00B83FA4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1F4BF99C2B5A0C2E0064382A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		1F4BF99D2B5A0C2E0064382A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		1F4BF9A02B5A0C560064382A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F4BF9A12B5A0C560064382A /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		1F4BF9A52B5A0D960064382A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		1F4BF9A92B5A52740064382A /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		1FBCD5472B5656C5007969B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1FF0C12C2B47D12E00484086 /* TiviE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiviE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF0C12F2B47D12E00484086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97E33C4ED1119A094B58F20 /* Pods_TiviE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF0C1332B47D12E00484086 /* ViewControllerLogin.swift */,
+				1F4BF9A92B5A52740064382A /* PlayerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -66,10 +80,36 @@
 			isa = PBXGroup;
 			children = (
 				1F0EA6A02B579E43006A5D52 /* MoviesController.swift */,
-				1F0EA6A22B57B670006A5D52 /* CollectionViewCell.swift */,
-				1F4434732B58D20C00B83FA4 /* TableViewCell.swift */,
 			);
 			path = "Movie tab";
+			sourceTree = "<group>";
+		};
+		1F4BF99A2B5A0BBA0064382A /* HomeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BF99C2B5A0C2E0064382A /* HomeTableViewCell.swift */,
+				1F4BF99D2B5A0C2E0064382A /* HomeTableViewCell.xib */,
+			);
+			path = HomeTableCell;
+			sourceTree = "<group>";
+		};
+		1F4BF99B2B5A0BE50064382A /* HomeCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BF9A02B5A0C560064382A /* HomeCollectionViewCell.swift */,
+				1F4BF9A12B5A0C560064382A /* HomeCollectionViewCell.xib */,
+			);
+			path = HomeCollectionCell;
+			sourceTree = "<group>";
+		};
+		1F4BF9A42B5A0D6B0064382A /* Home tab */ = {
+			isa = PBXGroup;
+			children = (
+				1F4BF99B2B5A0BE50064382A /* HomeCollectionCell */,
+				1F4BF99A2B5A0BBA0064382A /* HomeTableCell */,
+				1F4BF9A52B5A0D960064382A /* HomeController.swift */,
+			);
+			path = "Home tab";
 			sourceTree = "<group>";
 		};
 		1FF0C1232B47D12E00484086 = {
@@ -77,6 +117,8 @@
 			children = (
 				1FF0C12E2B47D12E00484086 /* TiviE */,
 				1FF0C12D2B47D12E00484086 /* Products */,
+				894C7D34C65870FA517AEE4B /* Pods */,
+				A0F3E882A5A7FE89DB46C45C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +133,7 @@
 		1FF0C12E2B47D12E00484086 /* TiviE */ = {
 			isa = PBXGroup;
 			children = (
+				1F4BF9A42B5A0D6B0064382A /* Home tab */,
 				1FBCD5472B5656C5007969B3 /* Model.swift */,
 				1FF0C12F2B47D12E00484086 /* AppDelegate.swift */,
 				1FF0C1312B47D12E00484086 /* SceneDelegate.swift */,
@@ -103,6 +146,23 @@
 			path = TiviE;
 			sourceTree = "<group>";
 		};
+		894C7D34C65870FA517AEE4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				142110A723AF5479DD92C2B9 /* Pods-TiviE.debug.xcconfig */,
+				00A3BA6E9E5FD6ADD459BA52 /* Pods-TiviE.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0F3E882A5A7FE89DB46C45C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188466A729E008104CD90406 /* Pods_TiviE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FF0C1402B47D12F00484086 /* Build configuration list for PBXNativeTarget "TiviE" */;
 			buildPhases = (
+				A3821A97FCE8A19AE15FF7E4 /* [CP] Check Pods Manifest.lock */,
 				1FF0C1282B47D12E00484086 /* Sources */,
 				1FF0C1292B47D12E00484086 /* Frameworks */,
 				1FF0C12A2B47D12E00484086 /* Resources */,
+				93EC7179897750D2A022A0B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,13 +223,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4BF9A32B5A0C560064382A /* HomeCollectionViewCell.xib in Resources */,
 				1FF0C13C2B47D12F00484086 /* LaunchScreen.storyboard in Resources */,
 				1FF0C1392B47D12F00484086 /* Assets.xcassets in Resources */,
+				1F4BF99F2B5A0C2E0064382A /* HomeTableViewCell.xib in Resources */,
 				1FF0C1372B47D12E00484086 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93EC7179897750D2A022A0B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TiviE/Pods-TiviE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TiviE/Pods-TiviE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TiviE/Pods-TiviE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3821A97FCE8A19AE15FF7E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TiviE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FF0C1282B47D12E00484086 /* Sources */ = {
@@ -175,11 +281,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBCD5482B5656C5007969B3 /* Model.swift in Sources */,
-				1F4434742B58D20C00B83FA4 /* TableViewCell.swift in Sources */,
 				1FF0C1342B47D12E00484086 /* ViewControllerLogin.swift in Sources */,
 				1F0EA6A12B579E43006A5D52 /* MoviesController.swift in Sources */,
+				1F4BF9A62B5A0D960064382A /* HomeController.swift in Sources */,
 				1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */,
-				1F0EA6A32B57B670006A5D52 /* CollectionViewCell.swift in Sources */,
+				1F4BF9A22B5A0C560064382A /* HomeCollectionViewCell.swift in Sources */,
+				1F4BF99E2B5A0C2E0064382A /* HomeTableViewCell.swift in Sources */,
+				1F4BF9AA2B5A52740064382A /* PlayerController.swift in Sources */,
 				1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,7 +351,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -306,7 +414,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -327,6 +435,7 @@
 		};
 		1FF0C1412B47D12F00484086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142110A723AF5479DD92C2B9 /* Pods-TiviE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +448,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +467,7 @@
 		};
 		1FF0C1422B47D12F00484086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A3BA6E9E5FD6ADD459BA52 /* Pods-TiviE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -369,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

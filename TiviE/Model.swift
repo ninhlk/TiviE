@@ -69,7 +69,7 @@ var arrayMovies: [Movies] = [
     Movies(name: "Thông Minh Lên",
            imageP: "https://images.msky.vn/images/hbo/films/009427HS-portrait.jpg",
            imageL: "https://images.msky.vn/images/hbo/films/009427HS-landscape.jpg",
-           genre: "Gia Đình",
+           genre: "Giải Trí",
            urlStr: "https://www.youtube.com/watch?v=QkM_0uAMgRI")
     
 ]
