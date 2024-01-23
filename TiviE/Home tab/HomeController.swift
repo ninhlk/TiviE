@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
+class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -15,9 +15,8 @@ class HomeController: UIViewController,  UITableViewDelegate, UITableViewDataSou
         tableView.register(HomeTableViewCell.nib(), forCellReuseIdentifier: HomeTableViewCell.identifier)
         tableView.dataSource = self
         tableView.delegate = self
-        
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return genre.count
     }

@@ -11,7 +11,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var imageCollection: UIImageView!
     
-    static let identifier = "HomeCollectionViewCell"
+    static let identifier = String(describing: HomeCollectionViewCell.self)
     
     static func nib() -> UINib {
         return UINib(nibName: "HomeCollectionViewCell", bundle: nil)

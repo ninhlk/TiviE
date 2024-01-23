@@ -13,7 +13,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var buttonGenre: UIButton!
     @IBOutlet var collectionView: UICollectionView!
     
-    static let identifier = "HomeTableViewCell"
+    static let identifier = String(describing: HomeTableViewCell.self)
     
     static func nib() -> UINib {
         return UINib(nibName: "HomeTableViewCell", bundle: nil)
