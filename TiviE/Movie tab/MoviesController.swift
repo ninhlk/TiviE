@@ -20,8 +20,8 @@ class MoviesController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pagerView.itemSize = CGSize(width: UIScreen.main.bounds.width - 150,
-                                    height: UIScreen.main.bounds.height / 2)
+        pagerView.itemSize = CGSize(width: UIScreen.main.bounds.width - 160,
+                                    height: UIScreen.main.bounds.height / 2.2)
         pagerView.transformer = FSPagerViewTransformer(type: .overlap)
     }
     
@@ -53,7 +53,10 @@ extension MoviesController: FSPagerViewDataSource, FSPagerViewDelegate {
     }
     
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
-        
+        id = index
+        let playerController = storyboard?.instantiateViewController(withIdentifier: "PlayerController") as! PlayerController
+        present(playerController, animated: true)
+
     }
     
 }

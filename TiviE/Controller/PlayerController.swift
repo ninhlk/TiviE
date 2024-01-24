@@ -6,18 +6,23 @@
 //
 
 import UIKit
-
+import WebKit
 class PlayerController: UIViewController {
-    //        var playerMovie: AVPlayerViewController = AVPlayerViewController()
-    //        let url: URL = URL(string: "https://www.youtube.com/watch?v=RXVHh-LNm1A&list=PLzrVYRai0riSlAocQR3BvHCtEhcKa204E&index=94")!
-    //        playerMovie.player = AVPlayer(url: url)
-    //        print(arrayMovies[indexPath.row].name)
-    //        playerMovie.view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height / 3)
-    //        view.addSubview(playerMovie.view)
-    @IBOutlet weak var playerView: UIView!
+    @IBOutlet weak var webViewPlay: WKWebView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let id = id {
+            titleLabel.text = arrayMovies[id].name
+            let videoUrl: URL? = URL(string: arrayMovies[id].urlStr)
 
+            if let videoUrl = videoUrl {
+                let request: URLRequest = URLRequest(url: videoUrl)
+                webViewPlay.load(request)
+            }
+        }
 
     }
     
