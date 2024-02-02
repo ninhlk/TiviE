@@ -9,7 +9,7 @@ import Foundation
 
 
 var userName, passWord: String?
-var id: Int?
+var rowID: Int?
 
 let genre: [String] = [ "Hành Động", "Kinh Dị", "Mạo Hiểm", "Khoa Giáo", "Giải Trí", "Tình Cảm", "Văn Hoá", "Gia Đình" ]
 

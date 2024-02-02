@@ -12,6 +12,7 @@ class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var buttonGenre: UIButton!
     @IBOutlet var collectionView: UICollectionView!
+    var actionNextToScreen: NextToScreen?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,7 +45,7 @@ extension HomeTableViewCell: UICollectionViewDataSource, UICollectionViewDelegat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-        cell.setData(image: arrayMovies[indexPath.row])
+        cell.setData(image: arrayMovies[indexPath.row], style: true)
         return cell
     }
     
@@ -53,11 +54,9 @@ extension HomeTableViewCell: UICollectionViewDataSource, UICollectionViewDelegat
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        rowID = indexPath.row
+        actionNextToScreen?.nextToScreen()
         print(arrayMovies[indexPath.row].name)
-
-//        var storyBoard = UIStoryboard(name: "Main", bundle: nil)
-//        let playerController = storyBoard.instantiateViewController(withIdentifier: "PlayerController") as! PlayerController
-
     }
     
     

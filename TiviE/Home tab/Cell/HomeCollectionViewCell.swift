@@ -15,8 +15,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
         return UINib(nibName: "HomeCollectionViewCell", bundle: nil)
     }
     
-    func setData(image: Movies) {
-        imageCollection.setImageFromStringrURL(stringUrl: image.imageP)
+    func setData(image: Movies, style: Bool) {
+        if style {
+            imageCollection.setImageFromStringrURL(stringUrl: image.imageP)
+        } else {
+            imageCollection.setImageFromStringrURL(stringUrl: image.imageL)
+        }
         layer.cornerRadius = 5
     }
 

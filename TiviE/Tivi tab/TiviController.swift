@@ -6,7 +6,6 @@
 //
 
 import UIKit
-//import FSPagerView
 
 class TiviController: UIViewController {
 

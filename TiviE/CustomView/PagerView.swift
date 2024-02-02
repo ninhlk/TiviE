@@ -34,6 +34,7 @@ class PagerView: UIView {
         contentView.autoresizingMask = [ .flexibleHeight, .flexibleWidth]
     }
     
+    //MARK: Register Pager View
     func setPagerView() {
         pagerView.dataSource = self
         pagerView.delegate = self
@@ -43,6 +44,7 @@ class PagerView: UIView {
     }
 }
 
+//MARK: Setup pager view
 extension PagerView: FSPagerViewDataSource, FSPagerViewDelegate {
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
@@ -57,4 +59,5 @@ extension PagerView: FSPagerViewDataSource, FSPagerViewDelegate {
         return arrayMovies.count
     }
     
+
 }

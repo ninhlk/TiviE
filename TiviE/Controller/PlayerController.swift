@@ -7,16 +7,19 @@
 
 import UIKit
 import WebKit
+
 class PlayerController: UIViewController {
     @IBOutlet weak var webViewPlay: WKWebView!
     @IBOutlet weak var titleLabel: UILabel!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let id = id {
-            titleLabel.text = arrayMovies[id].name
-            let videoUrl: URL? = URL(string: arrayMovies[id].urlStr)
+        if let rowID = rowID {
+            titleLabel.text = arrayMovies[rowID].name
+            let videoUrl: URL? = URL(string: arrayMovies[rowID].urlStr)
 
             if let videoUrl = videoUrl {
                 let request: URLRequest = URLRequest(url: videoUrl)
@@ -26,5 +29,8 @@ class PlayerController: UIViewController {
 
     }
     
-
+    @IBAction func backButtonClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
