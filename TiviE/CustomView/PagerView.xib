@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PagerView" customModule="TiviE" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="cYv-DB-x06"/>
+                <outlet property="labelGenre" destination="Ii2-Y0-fXQ" id="ygR-uc-Rvl"/>
+                <outlet property="pagerView" destination="a8L-nD-XJx" id="Q4w-oS-ns3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="488"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8L-nD-XJx" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="447"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ii2-Y0-fXQ">
+                    <rect key="frame" x="175.66666666666666" y="457" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+            <constraints>
+                <constraint firstItem="a8L-nD-XJx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0V6-C3-oyC"/>
+                <constraint firstItem="Ii2-Y0-fXQ" firstAttribute="top" secondItem="a8L-nD-XJx" secondAttribute="bottom" constant="10" id="Xmd-KR-Acs"/>
+                <constraint firstItem="a8L-nD-XJx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YFD-Ad-uoU"/>
+                <constraint firstAttribute="bottom" secondItem="Ii2-Y0-fXQ" secondAttribute="bottom" constant="10" id="Ycy-6r-5I9"/>
+                <constraint firstItem="Ii2-Y0-fXQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="j10-ew-l0z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a8L-nD-XJx" secondAttribute="trailing" id="xUy-kZ-Ryo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-2.2900763358778624" y="115.49295774647888"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

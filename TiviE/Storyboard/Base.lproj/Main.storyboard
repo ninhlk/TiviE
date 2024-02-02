@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="-35"/>
+            <point key="canvasLocation" x="-48" y="-75"/>
         </scene>
         <!--User-->
         <scene sceneID="VgA-JG-EIH">
@@ -140,19 +140,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npz-dd-4Ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="670"/>
+            <point key="canvasLocation" x="2106" y="670"/>
         </scene>
         <!--Tivi-->
         <scene sceneID="5bV-qc-jUU">
             <objects>
-                <viewController id="OyI-T1-NpH" userLabel="Tivi" sceneMemberID="viewController">
+                <viewController id="OyI-T1-NpH" userLabel="Tivi" customClass="TiviController" customModule="TiviE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aYd-mQ-9lE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3xM-oE-AqM">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="A2F-aM-iYx" customClass="PagerView" customModule="TiviE" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="410"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zCL-LO-l9v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3xM-oE-AqM" firstAttribute="top" secondItem="aYd-mQ-9lE" secondAttribute="top" id="1Ao-1Z-zWL"/>
+                            <constraint firstItem="3xM-oE-AqM" firstAttribute="trailing" secondItem="zCL-LO-l9v" secondAttribute="trailing" id="UZb-Kt-bv0"/>
+                            <constraint firstItem="zCL-LO-l9v" firstAttribute="bottom" secondItem="3xM-oE-AqM" secondAttribute="bottom" id="XQL-zD-i35"/>
+                            <constraint firstItem="3xM-oE-AqM" firstAttribute="leading" secondItem="zCL-LO-l9v" secondAttribute="leading" id="lOq-fl-RMM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tivi" image="television" id="dHM-12-Q0B"/>
+                    <connections>
+                        <outlet property="tableView" destination="3xM-oE-AqM" id="3CQ-tG-mcY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfr-3L-b6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,10 +193,6 @@
                                         <rect key="frame" x="0.0" y="60.000000000000028" width="393" height="404.66666666666674"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration" identifier="cell"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="ZSA-lI-GFh" id="gFT-mr-cM3"/>
-                                            <outlet property="delegate" destination="ZSA-lI-GFh" id="fgB-4j-lzW"/>
-                                        </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-g5-w5A">
                                         <rect key="frame" x="153.33333333333334" y="469.66666666666669" width="86.666666666666657" height="21"/>
@@ -213,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uJ-Mm-5aZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2183.969465648855" y="669.71830985915494"/>
+            <point key="canvasLocation" x="662" y="670"/>
         </scene>
         <!--Home-->
         <scene sceneID="ELS-Qc-ZZm">
@@ -244,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgV-65-5aV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3014.5038167938928" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="-48" y="1389"/>
         </scene>
         <!--Player Controller-->
         <scene sceneID="upb-f1-NUf">
@@ -290,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOn-mg-6lY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3015" y="670"/>
+            <point key="canvasLocation" x="1382" y="-75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yhp-2i-66O">
@@ -311,7 +327,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9u7-by-03h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="-35"/>
+            <point key="canvasLocation" x="662" y="-75"/>
         </scene>
         <!--Home-->
         <scene sceneID="sFP-3d-xKe">
@@ -330,7 +346,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGs-bo-bsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184" y="-35"/>
+            <point key="canvasLocation" x="-47" y="670"/>
         </scene>
     </scenes>
     <resources>
