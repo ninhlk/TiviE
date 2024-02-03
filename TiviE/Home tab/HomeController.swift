@@ -14,6 +14,7 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerTableView()
+        
     }
     
     private func registerTableView() {
@@ -21,6 +22,8 @@ class HomeController: UIViewController {
         tableView.register(UINib(nibName: "TableViewCell2", bundle: nil), forCellReuseIdentifier: "TableViewCell2")
         tableView.dataSource = self
         tableView.delegate = self
+//        tableView.estimatedRowHeight = 138
+//        tableView.rowHeight = UITableView.automaticDimension
     }
     
     

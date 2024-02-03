@@ -95,7 +95,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pgb-5y-r18">
-                                <rect key="frame" x="21.666666666666657" y="98.999999999999986" width="350" height="193.66666666666663"/>
+                                <rect key="frame" x="21.666666666666629" y="99" width="350" height="193.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" priority="999" constant="350" id="K7D-8e-SFO"/>
                                     <constraint firstAttribute="width" secondItem="Pgb-5y-r18" secondAttribute="height" multiplier="353:195" priority="999" id="evL-hd-pLL"/>
@@ -165,8 +165,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3xM-oE-AqM" firstAttribute="top" secondItem="aYd-mQ-9lE" secondAttribute="top" id="1Ao-1Z-zWL"/>
+                            <constraint firstItem="zCL-LO-l9v" firstAttribute="bottom" secondItem="3xM-oE-AqM" secondAttribute="bottom" id="2Gv-vJ-Vgj"/>
                             <constraint firstItem="3xM-oE-AqM" firstAttribute="trailing" secondItem="zCL-LO-l9v" secondAttribute="trailing" id="UZb-Kt-bv0"/>
-                            <constraint firstItem="zCL-LO-l9v" firstAttribute="bottom" secondItem="3xM-oE-AqM" secondAttribute="bottom" id="XQL-zD-i35"/>
                             <constraint firstItem="3xM-oE-AqM" firstAttribute="leading" secondItem="zCL-LO-l9v" secondAttribute="leading" id="lOq-fl-RMM"/>
                         </constraints>
                     </view>
@@ -187,39 +187,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pot-ya-wlH">
-                                <rect key="frame" x="0.0" y="59" width="393" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="S44-WU-DJe">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wvk-tb-Scz">
-                                    <size key="itemSize" width="120" height="180"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="QeR-Q5-irT" customClass="Cell" customModule="TiviE" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="0.0" width="120" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Bk8-df-wVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.0062408219091594219" green="0.99213021993637085" blue="0.04885498434305191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IwB-Vq-9BN">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="180"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionReusableView>
-                            </collectionView>
+                                <collectionView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="50D-bh-YYr">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="319"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="f8p-wv-AHx">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <cells>
+                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviesCollectionViewCell" id="P0Z-kX-N8G" customClass="MoviesCollectionViewCell" customModule="TiviE" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I5v-nB-Vts">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </collectionViewCellContentView>
+                                        </collectionViewCell>
+                                    </cells>
+                                </collectionView>
+                                <pageControl key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" id="2u5-CP-N9k">
+                                    <rect key="frame" x="0.0" y="319" width="393" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="currentPageIndicatorTintColor" systemColor="linkColor"/>
+                                </pageControl>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lha-XJ-XRr"/>
                         <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S44-WU-DJe" firstAttribute="bottom" secondItem="Lha-XJ-XRr" secondAttribute="bottom" id="19w-gW-6he"/>
+                            <constraint firstItem="S44-WU-DJe" firstAttribute="trailing" secondItem="Lha-XJ-XRr" secondAttribute="trailing" id="8Yv-nC-zrI"/>
+                            <constraint firstItem="S44-WU-DJe" firstAttribute="leading" secondItem="Lha-XJ-XRr" secondAttribute="leading" id="Nkv-JY-Dyz"/>
+                            <constraint firstItem="S44-WU-DJe" firstAttribute="top" secondItem="7eN-6i-LRa" secondAttribute="top" id="yEg-nW-1gB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Movies" image="movies" id="BNe-zL-M4A"/>
                     <connections>
-                        <outlet property="collectionView" destination="pot-ya-wlH" id="SeP-wV-q3I"/>
+                        <outlet property="collectionView" destination="50D-bh-YYr" id="x2W-9T-q3E"/>
+                        <outlet property="pageControl" destination="2u5-CP-N9k" id="5YR-RU-i3E"/>
+                        <outlet property="tableView" destination="S44-WU-DJe" id="gws-2S-mGQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uJ-Mm-5aZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
