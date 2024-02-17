@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomScrollView" customModule="TiviE" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="uEm-9d-gXu"/>
+                <outlet property="genreLB" destination="NUu-J1-EZs" id="aMt-kQ-Upy"/>
+                <outlet property="pageControl" destination="Qwe-zW-5cb" id="SP3-hK-GfD"/>
+                <outlet property="scrollView" destination="ZYq-9A-rqB" id="n3n-Hb-ZMc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="724" height="537"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUu-J1-EZs">
+                    <rect key="frame" x="341" y="458" width="42" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="4zj-WW-BmQ"/>
+                        <constraint firstAttribute="height" constant="20" id="Hoe-bG-UY9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-zW-5cb">
+                    <rect key="frame" x="304" y="483" width="116" height="20"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="HC9-3c-zmo"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="aCa-Mw-6P6"/>
+                    </constraints>
+                </pageControl>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-9A-rqB">
+                    <rect key="frame" x="0.0" y="0.0" width="724" height="445"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="mqQ-qx-F2m"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="baG-iS-0Gz"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemCyanColor"/>
+            <constraints>
+                <constraint firstItem="Qwe-zW-5cb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2XF-Lw-ohX"/>
+                <constraint firstItem="ZYq-9A-rqB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HUr-n0-hdd"/>
+                <constraint firstItem="NUu-J1-EZs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W3d-kB-fEq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZYq-9A-rqB" secondAttribute="trailing" id="Woh-oZ-9BE"/>
+                <constraint firstItem="NUu-J1-EZs" firstAttribute="top" secondItem="ZYq-9A-rqB" secondAttribute="bottom" constant="5" id="dop-j2-KIj"/>
+                <constraint firstItem="Qwe-zW-5cb" firstAttribute="top" secondItem="NUu-J1-EZs" secondAttribute="bottom" constant="5" id="jTq-sI-UDq"/>
+                <constraint firstItem="ZYq-9A-rqB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uGa-VF-gP4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qwe-zW-5cb" secondAttribute="bottom" id="z9m-dL-YAL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="302.29007633587787" y="236.26760563380282"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

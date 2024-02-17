@@ -7,22 +7,16 @@
 
 import UIKit
 
-class TiviController: UIViewController {
+class TiviController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerTableView()
+        tableView.setUpTableView(with: self, types: [HomeTableViewCell.self])
         
     }
     
-    private func registerTableView() {
-        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
-        tableView.dataSource = self
-        tableView.delegate = self
-    }
-
-
 }
 
 extension TiviController: UITableViewDataSource, UITableViewDelegate {

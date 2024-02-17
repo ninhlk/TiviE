@@ -11,6 +11,9 @@
 		1F2EB57F2B6B3F970004FEF8 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EB57E2B6B3F970004FEF8 /* PagerView.swift */; };
 		1F2EB5812B6B40EB0004FEF8 /* PagerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2EB5802B6B40EB0004FEF8 /* PagerView.xib */; };
 		1F2EB5842B6B62130004FEF8 /* TiviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EB5832B6B62130004FEF8 /* TiviController.swift */; };
+		1F3251D22B71E56400340FFC /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3251D12B71E56400340FFC /* CustomScrollView.swift */; };
+		1F3251D42B71E56E00340FFC /* CustomScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3251D32B71E56E00340FFC /* CustomScrollView.xib */; };
+		1F3251D62B71EC6A00340FFC /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3251D52B71EC6A00340FFC /* UserController.swift */; };
 		1F47AC8C2B6D1CD8001E34F0 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F47AC8A2B6D1CD8001E34F0 /* MoviesCollectionViewCell.swift */; };
 		1F47AC8D2B6D1CD8001E34F0 /* MoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F47AC8B2B6D1CD8001E34F0 /* MoviesCollectionViewCell.xib */; };
 		1F4BF99E2B5A0C2E0064382A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4BF99C2B5A0C2E0064382A /* HomeTableViewCell.swift */; };
@@ -22,6 +25,8 @@
 		1F54EFF22B6C960D00C9DBB5 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54EFF02B6C960D00C9DBB5 /* TableViewCell2.swift */; };
 		1F54EFF32B6C960D00C9DBB5 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F54EFF12B6C960D00C9DBB5 /* TableViewCell2.xib */; };
 		1F54EFF52B6CA66800C9DBB5 /* Extension + Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54EFF42B6CA66800C9DBB5 /* Extension + Protocol.swift */; };
+		1F983B2B2B6F8D7B00222360 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F983B292B6F8D7B00222360 /* BaseViewController.swift */; };
+		1F983B2C2B6F8D7B00222360 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F983B2A2B6F8D7B00222360 /* BaseView.swift */; };
 		1FBCD5482B5656C5007969B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD5472B5656C5007969B3 /* Model.swift */; };
 		1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C12F2B47D12E00484086 /* AppDelegate.swift */; };
 		1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0C1312B47D12E00484086 /* SceneDelegate.swift */; };
@@ -40,6 +45,9 @@
 		1F2EB57E2B6B3F970004FEF8 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		1F2EB5802B6B40EB0004FEF8 /* PagerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagerView.xib; sourceTree = "<group>"; };
 		1F2EB5832B6B62130004FEF8 /* TiviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiviController.swift; sourceTree = "<group>"; };
+		1F3251D12B71E56400340FFC /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		1F3251D32B71E56E00340FFC /* CustomScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomScrollView.xib; sourceTree = "<group>"; };
+		1F3251D52B71EC6A00340FFC /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		1F47AC8A2B6D1CD8001E34F0 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F47AC8B2B6D1CD8001E34F0 /* MoviesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesCollectionViewCell.xib; sourceTree = "<group>"; };
 		1F4BF99C2B5A0C2E0064382A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,6 +59,8 @@
 		1F54EFF02B6C960D00C9DBB5 /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
 		1F54EFF12B6C960D00C9DBB5 /* TableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
 		1F54EFF42B6CA66800C9DBB5 /* Extension + Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Protocol.swift"; sourceTree = "<group>"; };
+		1F983B292B6F8D7B00222360 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1F983B2A2B6F8D7B00222360 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		1FBCD5472B5656C5007969B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1FF0C12C2B47D12E00484086 /* TiviE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiviE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF0C12F2B47D12E00484086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +117,8 @@
 			children = (
 				1F2EB57E2B6B3F970004FEF8 /* PagerView.swift */,
 				1F2EB5802B6B40EB0004FEF8 /* PagerView.xib */,
+				1F3251D12B71E56400340FFC /* CustomScrollView.swift */,
+				1F3251D32B71E56E00340FFC /* CustomScrollView.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -117,6 +129,14 @@
 				1F2EB5832B6B62130004FEF8 /* TiviController.swift */,
 			);
 			path = "Tivi tab";
+			sourceTree = "<group>";
+		};
+		1F3251D72B71EC7700340FFC /* User tab */ = {
+			isa = PBXGroup;
+			children = (
+				1F3251D52B71EC6A00340FFC /* UserController.swift */,
+			);
+			path = "User tab";
 			sourceTree = "<group>";
 		};
 		1F4BF99B2B5A0BE50064382A /* Cell */ = {
@@ -139,6 +159,13 @@
 				1F4BF99B2B5A0BE50064382A /* Cell */,
 			);
 			path = "Home tab";
+			sourceTree = "<group>";
+		};
+		1F983B282B6F8D7B00222360 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		1FF0C1232B47D12E00484086 = {
@@ -167,11 +194,15 @@
 				1F54EFF42B6CA66800C9DBB5 /* Extension + Protocol.swift */,
 				1FF0C12F2B47D12E00484086 /* AppDelegate.swift */,
 				1FF0C1312B47D12E00484086 /* SceneDelegate.swift */,
+				1F983B282B6F8D7B00222360 /* Base */,
+				1F983B292B6F8D7B00222360 /* BaseViewController.swift */,
+				1F983B2A2B6F8D7B00222360 /* BaseView.swift */,
 				1F2EB5822B6B41420004FEF8 /* CustomView */,
 				1F4BF9A42B5A0D6B0064382A /* Home tab */,
 				1F0EA69E2B577D96006A5D52 /* Controller */,
 				1F0EA6A42B57B695006A5D52 /* Movie tab */,
 				1F2EB5852B6B622D0004FEF8 /* Tivi tab */,
+				1F3251D72B71EC7700340FFC /* User tab */,
 				1F0EA69F2B577DCD006A5D52 /* Storyboard */,
 				1FF0C13D2B47D12F00484086 /* Info.plist */,
 			);
@@ -259,6 +290,7 @@
 				1F2EB5812B6B40EB0004FEF8 /* PagerView.xib in Resources */,
 				1F54EFF32B6C960D00C9DBB5 /* TableViewCell2.xib in Resources */,
 				1FF0C13C2B47D12F00484086 /* LaunchScreen.storyboard in Resources */,
+				1F3251D42B71E56E00340FFC /* CustomScrollView.xib in Resources */,
 				1FF0C1392B47D12F00484086 /* Assets.xcassets in Resources */,
 				1F4BF99F2B5A0C2E0064382A /* HomeTableViewCell.xib in Resources */,
 				1FF0C1372B47D12E00484086 /* Main.storyboard in Resources */,
@@ -316,19 +348,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBCD5482B5656C5007969B3 /* Model.swift in Sources */,
+				1F3251D22B71E56400340FFC /* CustomScrollView.swift in Sources */,
 				1FF0C1342B47D12E00484086 /* ViewControllerLogin.swift in Sources */,
 				1F2EB5842B6B62130004FEF8 /* TiviController.swift in Sources */,
 				1F2EB57F2B6B3F970004FEF8 /* PagerView.swift in Sources */,
 				1F0EA6A12B579E43006A5D52 /* MoviesController.swift in Sources */,
+				1F983B2B2B6F8D7B00222360 /* BaseViewController.swift in Sources */,
 				1F4BF9A62B5A0D960064382A /* HomeController.swift in Sources */,
 				1FF0C1302B47D12E00484086 /* AppDelegate.swift in Sources */,
 				1F4BF9A22B5A0C560064382A /* HomeCollectionViewCell.swift in Sources */,
+				1F3251D62B71EC6A00340FFC /* UserController.swift in Sources */,
 				1F4BF99E2B5A0C2E0064382A /* HomeTableViewCell.swift in Sources */,
 				1F4BF9AA2B5A52740064382A /* PlayerController.swift in Sources */,
 				1F54EFF22B6C960D00C9DBB5 /* TableViewCell2.swift in Sources */,
 				1FF0C1322B47D12E00484086 /* SceneDelegate.swift in Sources */,
 				1F54EFF52B6CA66800C9DBB5 /* Extension + Protocol.swift in Sources */,
 				1F47AC8C2B6D1CD8001E34F0 /* MoviesCollectionViewCell.swift in Sources */,
+				1F983B2C2B6F8D7B00222360 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

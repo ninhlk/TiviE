@@ -17,9 +17,11 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     func setData(image: Movies, style: Bool) {
         if style {
-            imageCollection.setImageFromStringrURL(stringUrl: image.imageP)
+            let url = URL(string: image.imageP)
+            imageCollection.kf.setImage(with: url)
         } else {
-            imageCollection.setImageFromStringrURL(stringUrl: image.imageL)
+            let url = URL(string: image.imageL)
+            imageCollection.kf.setImage(with: url)
         }
         layer.cornerRadius = 5
     }

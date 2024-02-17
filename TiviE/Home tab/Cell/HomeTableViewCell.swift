@@ -19,9 +19,6 @@ class HomeTableViewCell: UITableViewCell {
         registerCollectionView()
     }
     
-    static func nib() -> UINib {
-        return UINib(nibName: "HomeTableViewCell", bundle: nil)
-    }
     
     //MARK: register collection view
     private func registerCollectionView () {

@@ -8,24 +8,13 @@
 import UIKit
 
 
-class HomeController: UIViewController {
+class HomeController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerTableView()
-        
+        tableView.setUpTableView(with: self, types: [HomeTableViewCell.self, TableViewCell2.self])
     }
-    
-    private func registerTableView() {
-        tableView.register(HomeTableViewCell.nib(), forCellReuseIdentifier: "HomeTableViewCell")
-        tableView.register(UINib(nibName: "TableViewCell2", bundle: nil), forCellReuseIdentifier: "TableViewCell2")
-        tableView.dataSource = self
-        tableView.delegate = self
-//        tableView.estimatedRowHeight = 138
-//        tableView.rowHeight = UITableView.automaticDimension
-    }
-    
     
 }
 
@@ -37,15 +26,13 @@ extension HomeController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-
         if indexPath.row % 3 != 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
+            let cell = tableView.reuseCell(cell: HomeTableViewCell.self)
             cell.setData(button: genre[indexPath.row])
             cell.actionNextToScreen = self
             return cell
-
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell2", for: indexPath) as! TableViewCell2
+            let cell = tableView.reuseCell(cell: TableViewCell2.self)
             cell.setData(button: genre[indexPath.row])
             cell.actionNextToScreen = self
             return cell
@@ -56,14 +43,13 @@ extension HomeController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return indexPath.row % 3 != 0 ? 210 : 138
     }
-
+    
 }
 
 extension HomeController: NextToScreen {
     func nextToScreen() {
-        print(rowID!)
-        let screen = storyboard?.instantiateViewController(withIdentifier: "PlayerController") as! PlayerController
-        self.present(screen, animated: true, completion: nil)
+        let vc = PlayerController.instantiate()
+        self.present(vc, animated: true, completion: nil)
     }
     
 }
